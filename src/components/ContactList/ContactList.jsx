@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ContactLists, Btn } from 'components/Emotion.styled';
+import { ContactLists, Btn, ContactItem } from 'components/Emotion.styled';
 
 const ContactList = ({ contacts, deleteContact }) => {
   return (
     // РЕНДЕР ТА ВИДАЛЕННЯ
     <ContactLists>
       {contacts.map((contact) => (
-        <li key={contact.id}>
+        <ContactItem key={contact.id}>
           {contact.name} : {contact.number}
           <Btn type='button' onClick={() => deleteContact(contact.id)}>
             Delete
           </Btn>
-        </li>
+        </ContactItem>
       ))}
     </ContactLists>
   );

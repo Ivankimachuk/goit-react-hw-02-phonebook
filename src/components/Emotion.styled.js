@@ -52,6 +52,11 @@ flex-direction: column;
 gap: 20px;
 padding-top: 20px;
 `
+export const ContactItem = styled.li`
+display: flex;
+justify-content: space-between;
+
+`
 export const Btn = styled.button`
 color: black;
 background-color: #DCDCDC;
