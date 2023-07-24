@@ -9,6 +9,13 @@ border-radius: 20px;
 cursor: pointer;
 border:none;
 box-shadow: rgba(0, 0, 0, 0.75) 2px 2px 5px 0px;
+transition-property: color, background-color ;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+:hover {
+    background-color: black;
+    color: white;
+     }
 `
 export const Form = styled.form`
 margin: 0 auto;
@@ -55,4 +62,11 @@ cursor: pointer;
 border:none;
 box-shadow: rgba(0, 0, 0, 0.75) 2px 2px 5px 0px;
 margin-left: 20px;
+transition-property: color, background-color ;
+transition-duration: 350ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+:hover {
+    background-color: black;
+    color: white;
+     }
 `
